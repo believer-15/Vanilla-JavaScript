@@ -8,5 +8,19 @@
 <body>
     <div id="root"></div>
 </body>
-<script></script>
+<script>
+    document.body.onload = addElement;
+
+    function addElement() {
+        const dev = document.createElement("div");
+
+        const content = document.createTextNode("Ujjwal Sinha!! this side!");
+
+        const elem = dev.appendChild(content);
+
+        // const curr = document.getElementById("root");
+        // curr.appendChild(dev);
+        document.body.appendChild(elem);
+    }
+</script>
 </html>
